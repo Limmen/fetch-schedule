@@ -39,12 +39,8 @@
 		     ))))
     (message "diary-remote-calendar or diary-remote-calendar-local-replica is not set")))
 
-(provide 'fetch-schedule)
-
 (defun del-file (f)
   (when (file-exists-p f)
-    (progn
-      (message "file exists")
-      (delete-file f)
-      (message "file %s deleted" f))
-    ))
+    (delete-file f)))
+
+(provide 'fetch-schedule)
