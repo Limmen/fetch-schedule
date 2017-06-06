@@ -39,7 +39,18 @@ Jun 16, 2017 Resa till Prag
 
 ```
 
+Your local diary file should ofcourse be set to the variable `diary-file`, e.g:
+
+``` emacs-lisp
+
+(setq diary-file "~/Dropbox/org/diary_file")
+
+```
+
 Now whenever you want to update your calendar simply type `M-x fetch-schedule`.
+
+
+For more information about the calendar configuration see [the emacs manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/Diary.html)
 
 ## Author & Maintainer
 
